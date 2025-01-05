@@ -82,12 +82,11 @@ const getNonce = async (walletAddress, retries = 3) => {
 
     }
 };
-
 const login = async (address, message, signature, retries = 3) => {
     try {
         const res = await post(`wallet/login`, {
             address,
-            invitationCode: "9M8HC",
+            invitationCode: "SZ6EA",
             message,
             signature,
         });
